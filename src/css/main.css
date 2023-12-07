@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'Azonix';
+    src: url('./fonts/Azonix.otf');
+}
+
+
+#SPLogo {
+    height: 12em !important;
+}
+
+h1, h2, h3, p, a, div{
+    font-family: "Montserrat" !important;
+}
+
+body{
+    margin: 0;
+    background-color: #ffffff;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1em;
+    margin-bottom: 0;
+
+}
+
+.container{
+    width: 100% !important;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#navbarNav{
+    max-width: fit-content;
+    flex-direction: column;
+}
+
+#NavBarContainer{
+    max-width: fit-content;
+}
+
+.NavSocial{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    padding: 0.3em;
+    -webkit-transition: ease-in-out 0.2s;
+    text-align: center;
+}
+
+.NavSocial:hover{
+    color: #c7c7c7;
+}
+
+.NavSocials{
+    padding-top: 0.5em;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.nav-link{
+    font-size: 1.25em;
+    font-weight: 400;
+    text-transform: uppercase !important;
+    color: rgb(255, 255, 255);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+a.nav-link:hover{
+    color: #c7c7c7;
+}
+
+#NavBar{
+    display: flex;
+    justify-content: center;
+    background-color: #0000006d !important;
+    z-index: 10;
+    position: fixed;
+    width: 100%
+
+}
+
+.LogoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.navbar-brand{
+    justify-content: center;
+}
+
+.container-xl{
+    display: flex;
+    justify-content: center;
+}
+
+.Socials .card{
+    margin-top: 4em;
+    width: 40%;
+    border-radius: 1em;
+}
+
+.Socials{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialButton{
+    text-decoration: none !important;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.socialButton p{
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.socialButton i{
+    display:flex;
+    justify-content: center;
+    height: 1em;
+    font-size: 1.5em;
+}
+
+.black-white{
+    filter: grayscale(100%);
+}
+
+.add-padding{
+    padding: 4em;
+}
+
+.card.mb-3{
+    margin-top: 4em;
+}
+
+.backgroundHolder{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/pexels-energepiccom-159888.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter:grayscale(100%);
+}
+
+.btn {
+    border: solid;
+    border-width: 1.5px;
+    border-color: #c7c7c7;
+    -webkit-transition: ease-in-out 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.9em;
+    border-radius: 0;
+}
+
+.card{
+    border-width: 1.5px;
+    border-radius: 0;
+    border-color: #c7c7c7;
+}
+
+.btn:hover {
+    border-color: #1778f2;
+}
+
+.buttonHolder{
+    display:flex;
+    justify-content: flex-start;
+}
+
+@media(min-width: 768px){
+    .imageHolder{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .backgroundHolder{
+        display: none;
+    }
+}
+
+.TextSection{
+    margin-top: 6em;
+    margin-bottom: 6em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.TextSectionHeader, .TextSectionDescription, .TextSectionText{
+    text-align: center;
+    margin: 0.5em;
+}
+
+.TextSectionHeader{
+    color: #1778f2;
+}
+
+.TextSectionDescription{
+    color: #aaaaaa;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 4em;
+    margin-top: 4em;
+    text-align: center;
+    width: 100%;
+}
+
+#ImpressumKontakt{
+    margin: 0;
+}
+
+#ImpressumAnschrift{
+    margin-bottom: 4em;
+}
+
+footer a {
+    color: #fff;
+}
+
+.impressum{
+    text-align: left;
+}
+
+/* ScrollAnimation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1.2s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.Test {
+    height: 500px;
+}
+/* ScrollAnimation End */
+
+.CoverVideo{
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.background{
+    background-color: black;
+}
+
+#ServiceButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Bewertungen.TextSectionText{
+    display: none;
+}
+
+.owl-carousel{
+    margin-top: 2em;
+}
+
+.col-sm-10{
+    margin-bottom: 2em;
+}
+
+.hr{
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.ImageHolder{
+    position: relative;
+    background-image: url('../img/christopher-gower-m_HRfLhgABo-unsplash.jpg');
+    height: 85vh;
+    background-position: center 65%;
+    filter: grayscale(100%);
+    background-size: cover;
+    z-index: 0;
+}
+
+.ImageHolder::before {
+    content: ''; /* Pseudo-Element benötigt einen Inhalt, um sichtbar zu sein */
+    position: absolute; /* Position absolut relativ zu .ImageHolder */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
