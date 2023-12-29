@@ -37,7 +37,7 @@ html, body {
 } */
 
 .navbar{
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 3;
     background-color:#00000061 !important;
@@ -58,17 +58,25 @@ html, body {
     max-width: 80vw !important;
 }
 
-.container{
-    max-width: 70vw;
+.content-wrapper{
+    max-width: 80vw !important;
+    margin: 0 auto;
 }
 
 a.nav-link{
     color: white;
-    transition: ease-in-out 0.1s;
+    transition: color ease-in-out 0.1s;
 }
 
 a.nav-link:hover{
-    color: #c7c7c7;
+    color: #b9b9b9;
+}
+
+.nav-link-hover-dark:hover{
+    color: #6b6b6b !important;
+}
+.nav-link-hover-light:hover{
+    color: #cecece !important;
 }
 
 /*
@@ -132,10 +140,10 @@ a.nav-link:hover{
     justify-content: center;
 } */
 
-.container-xl{
+/* .container-xl{
     display: flex;
     justify-content: center;
-}
+} */
 
 .Socials .card{
     margin-top: 4em;
@@ -180,9 +188,9 @@ a.nav-link:hover{
     padding: 4em;
 }
 
-.card.mb-3{
+/* .card.mb-3{
     margin-top: 4em;
-}
+} */
 
 .backgroundHolder{
     height: 100%;
@@ -193,7 +201,7 @@ a.nav-link:hover{
     filter:grayscale(100%);
 }
 
-.btn {
+/* .btn {
     border: solid;
     border-width: 1.5px;
     border-color: #c7c7c7;
@@ -217,7 +225,7 @@ a.nav-link:hover{
 .buttonHolder{
     display:flex;
     justify-content: flex-start;
-}
+} */
 
 @media(min-width: 768px){
     .imageHolder{
@@ -274,34 +282,51 @@ footer a {
 }
 
 .impressum{
-    text-align: left;
+    text-align: center;
 }
 
 /* ScrollAnimation */
-.hidden {
+.hide {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(100%);
     transition: all 1.2s;
 }
 
-.hidden-left {
+/* Element wird von links reinanimiert */
+.hide-left {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1.2s;
 }
 
-.hidden-right {
+/* Element wird von rechts reinanimiert */
+.hide-right {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(100%);
     transition: all 1.2s;
 }
 
+.delay-1 {
+    transition-delay: 0.2s;
+  }
+  
+.delay-2 {
+    transition-delay: 0.4s;
+  }
+
+.delay-3 {
+    transition-delay: 0.6s;
+}
+
+.delay-4 {
+    transition-delay: 0.8s;
+}
 
 @media(prefers-reduced-motion){
-    .hidden{
+    .hide{
         transition: none;
     }
 }
@@ -345,10 +370,10 @@ footer a {
     margin-bottom: 2em;
 }
 
-.hr{
+/* .hr{
     margin-top: 0.5em !important;
     margin-bottom: 0.5em !important;
-}
+} */
 
 .ImageHolder{
     position: relative;
@@ -356,7 +381,7 @@ footer a {
     justify-content: center;
     align-items: center;
     background-image: url('../img/christopher-gower-m_HRfLhgABo-unsplash.jpg');
-    height: 85vh;
+    height: 50vh;
     background-position: center 65%;
     filter: grayscale(100%);
     background-size: cover;
@@ -379,4 +404,29 @@ footer a {
 
 .navbar-toggler:focus{
     border-color: white !important;
+}
+
+.impressum p {
+    font-size: 0.75em !important;
+}
+
+.service-card{
+    margin-top: 3em;
+    height: 15em;
+    transition: ease-in-out 0.2s;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.bi{
+    font-size: 2.5em;
+}
+
+.card-title{
+    /* color: #1778f2; */
+    font-weight: 300 !important;
+}
+
+i{
+    color: #1778f2;
 }

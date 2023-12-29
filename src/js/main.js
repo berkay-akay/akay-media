@@ -27,11 +27,15 @@
       navbar.classList.remove('navbar-dark');
       brand.style.color = 'black';
       links.forEach(link => link.style.color = 'black');
+      links.forEach(link => link.classList.add('nav-link-hover-dark'));
+      links.forEach(link => link.classList.remove('nav-link-hover-light'));
     } else {
       navbar.classList.add('navbar-dark');
       navbar.classList.remove('background-white', 'navbar-light');
       brand.style.color = 'white';
       links.forEach(link => link.style.color = 'white');
+      links.forEach(link => link.classList.add('nav-link-hover-light'));
+      links.forEach(link => link.classList.remove('nav-link-hover-dark'));
     }
   });
   

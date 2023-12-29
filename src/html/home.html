@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akay Media</title>
+  <title>Home | Akay Media</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../css/bootstrap-css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="../css/bootstrap-css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="../css/bootstrap-css/bootstrap-utilities.min.css">
   <link rel="stylesheet" href="../css/bootstrap-css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/input.css">
+  <link rel="stylesheet" href="../../dist/output.css">
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <!-- Google Fonts -->
@@ -23,7 +23,7 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
       <div class="container-fluid" id="navbar-content">
-        <a class="navbar-brand" href="#">Akay Media</a>
+        <a class="navbar-brand" href="#">Akay <span style="color: #1778f2;">Media</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,11 +42,36 @@
         </div>
       </div>
     </nav>
-  <div class="ImageHolder">
-    <div><p>Test</p></div>
-  </div>
-  <div class="container">
-    <div class="TextSection hidden">
+  <div class="ImageHolder"></div>
+  <div class="content-wrapper">
+    <div class="flex justify-center flex-wrap grid-cols-3 gap-3">
+
+      <a href="./dienstleistungen.html" class="no-underline hover:no-underline hide delay-1">
+        <div class="card w-80 bg-base-100 hover:shadow-xl service-card flex flex-col items-center justify-center p-5">
+          <i class="bi bi-code-slash text-3xl mb-4"></i>
+          <h2 class="card-title mb-4">Webentwicklung</h2>
+          <p class="text-center">Entwicklung von visuell ansprechenden, modernen Websites</p>
+        </div>
+      </a>
+
+      <a href="./dienstleistungen.html" class="no-underline hover:no-underline hide delay-2">
+        <div class="card w-80 bg-base-100 hover:shadow-xl service-card flex flex-col items-center justify-center p-5">
+          <i class="bi bi-graph-up text-3xl mb-4"></i>
+          <h2 class="card-title mb-4">SEO</h2>
+          <p class="text-center">Verbesserte Sichtbarkeit durch gezielte Suchmaschinenoptimierung</p>
+        </div>
+      </a>
+
+      <a href="./dienstleistungen.html" class="no-underline hover:no-underline hide delay-3">
+        <div class="card w-80 bg-base-100 hover:shadow-xl service-card flex flex-col items-center justify-center p-5">
+          <i class="bi bi-phone text-3xl mb-4"></i>
+          <h2 class="card-title mb-4">Responsive Design</h2>
+          <p class="text-center">Ihre digitale Präsenz reibungslos optimiert für alle Endgeräte</p>
+        </div>
+      </a>
+
+    </div>
+    <div class="TextSection hide delay-4">
       <div class="TextSectionHeader">
         <h2>Dienstleistungen</h2>
       </div>
@@ -61,12 +86,13 @@
         <a href="dienstleistungen.html" class="btn">Zu den Dienstleistungen</a>
       </div>
     </div>
-    <div class="TextSection hidden hr">
+
+    <!-- <div class="TextSection hide hr">
       <hr>
-    </div>
+    </div> -->
     <div class="row">
       <div class="col-6">
-        <div class="TextSection hidden">
+        <div class="TextSection hide">
           <div class="TextSectionHeader">
             <h2>Über Mich</h2>
           </div>
@@ -82,7 +108,7 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="TextSection hidden">
+        <div class="TextSection hide">
           <div class="TextSectionHeader">
             <h2>Mein Lebenslauf</h2>
           </div>
@@ -98,7 +124,6 @@
         </div>
       </div>
     </div>
-    <div class="text-center p-3">Test</div>
   </div>
   
   <footer>
@@ -106,16 +131,15 @@
       <div class="row">
         <div class="col-md-4 impressum">
           <p>Geschäftsführung:</p>
-          <p>Max Mustermann</p>
-          <p>Max Mustermann</p>
+          <p>Berkay Akay</p>
         </div>
         <div class="col-md-4 impressum">
           <p>Anschrift:</p>
-          <p id="ImpressumAnschrift">Musterstraße 123, 12345 Musterstadt</p>
+          <p id="ImpressumAnschrift">Turmstraße 1, 52072 Aachen</p>
           <p>Kontaktdaten:</p>
-          <p id="ImpressumKontakt">kontakt@example.com | Telefon: +49 123 456789</p>
+          <p id="ImpressumKontakt">kontakt@akay-media.de | Telefon: +49 123 456789</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 impressum">
           <p>
             <a href="/datenschutz">Datenschutz</a> | <a href="/agb">AGB</a>
           </p>
@@ -123,8 +147,6 @@
       </div>
     </div>
   </footer>
-
-  
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- Bootstrap JS -->
@@ -134,6 +156,8 @@
   <!-- ScrollAnimation JavaScript -->
   <script defer src="../js/scrollAnimation.js"></script>
   <script src="../js/main.js"></script>
+
+  
 </body>
 
 </html>
