@@ -383,7 +383,7 @@ footer a {
     background-image: url('../img/christopher-gower-m_HRfLhgABo-unsplash.jpg');
     height: 50vh;
     background-position: center 65%;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     background-size: cover;
     z-index: 0;
 }
@@ -430,3 +430,11 @@ footer a {
 i{
     color: #1778f2;
 }
+
+.slogan {
+    position: absolute; /* Um sicherzustellen, dass der Text über dem Bild liegt */
+    color: white; /* Weiße Textfarbe */
+    font-size: 1.75em; /* Passen Sie die Größe nach Bedarf an */
+    text-align: center;
+    z-index: 1; /* Stellt sicher, dass der Text über dem Bild liegt */
+  }

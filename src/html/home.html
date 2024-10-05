@@ -22,8 +22,8 @@
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
-      <div class="container-fluid" id="navbar-content">
-        <a class="navbar-brand" href="#">Akay <span style="color: #1778f2;">Media</span></a>
+      <div class="container-fluid text-m" id="navbar-content">
+        <a class="navbar-brand text-m" href="#">Akay <span style="color: #1778f2;">Media</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,14 +42,16 @@
         </div>
       </div>
     </nav>
-  <div class="ImageHolder"></div>
+  <div class="ImageHolder">
+    <!-- <h1 class="slogan">Handcodierte Websites.</h1> -->
+  </div>
   <div class="content-wrapper">
     <div class="flex justify-center flex-wrap grid-cols-3 gap-3">
 
       <a href="./dienstleistungen.html" class="no-underline hover:no-underline hide delay-1">
         <div class="card w-80 bg-base-100 hover:shadow-xl service-card flex flex-col items-center justify-center p-5">
           <i class="bi bi-code-slash text-3xl mb-4"></i>
-          <h2 class="card-title mb-4">Webentwicklung</h2>
+          <h2 class="card-title mb-4">Webdesign</h2>
           <p class="text-center">Entwicklung von visuell ansprechenden, modernen Websites</p>
         </div>
       </a>
@@ -92,7 +94,7 @@
     </div> -->
     <div class="row">
       <div class="col-6">
-        <div class="TextSection hide">
+        <div class="TextSection hide-left delay-4">
           <div class="TextSectionHeader">
             <h2>Über Mich</h2>
           </div>
@@ -108,7 +110,7 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="TextSection hide">
+        <div class="TextSection hide-right delay-4">
           <div class="TextSectionHeader">
             <h2>Mein Lebenslauf</h2>
           </div>
@@ -124,6 +126,36 @@
         </div>
       </div>
     </div>
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-3 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <div class="TextSection">
+            <div class="TextSectionHeader">
+              <h2 class="font-semibold text-2xl">Kontakt</h2>
+            </div>
+            <div class="TextSectionDescription">
+              <h3>Sie sind interessiert an einer Website?</h3>
+            </div>
+            <div class="TextSectionText">
+              <p>Kontaktieren Sie mich für ein unverbindliches und kostenloses Erstgespräch</p>
+            </div>
+          </div>
+          <form action="#" class="space-y-8">
+              <div>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ihre E-Mail</label>
+                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="beispiel@mail.com" required>
+              </div>
+              <div>
+                  <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Betreff</label>
+                  <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Lassen Sie mich wissen wie ich Ihnen helfen kann..." required>
+              </div>
+              <div class="sm:col-span-2">
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Ihre Nachricht</label>
+                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder=""></textarea>
+              </div>
+              <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+          </form>
+      </div>
+    </section>
   </div>
   
   <footer>
@@ -147,6 +179,8 @@
       </div>
     </div>
   </footer>
+  <!-- Flowbite JS -->
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- Bootstrap JS -->
